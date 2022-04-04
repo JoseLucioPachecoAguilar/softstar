@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Inicio</title>
+  <link rel="shortcut icon" href="images\car.ico">
+  <!--<img src="SOFTSTAR.png" width="157" height="40">-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<link rel="stylesheet" href="css\index.css">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css\index.css">
+</head>
+
+<body>
+  <input type="checkbox" id="checkbox">
+  <header class="header container-fluid">
+    <h2 class="u-name">SOFTSTAR
+      <label for="checkbox">
+        <i id="navbtn" class="fa fa-bars" aria-hidden="true"></i>
+      </label>
+    </h2>
+    <i class="fa fa-user" aria-hidden="true"></i>
+  </header>
+  <div class="body">
+    <nav class="side-bar">
+      <ul>
+        <li>
+          <a href="index.html">
+            <i class="fa fa-desktop" aria-hidden="true"></i>
+            <span>Inicio</span>
+          </a>
+        </li>
+        <li>
+          <a href="RegistroCliente.html">
+            <i class="fa fa-address-card-o" aria-hidden="true"></i>
+            <span>Clientes</span>
+          </a>
+        </li>
+        <li>
+          <a href="RegistroAuto.html">
+            <i class="fas fa-car"></i>
+            <span>Autos</span>
+          </a>
+        </li>
+        <li>
+          <a href="RegistroServicio.html">
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <span>Servicios</span>
+          </a>
+        </li>
+        <li>
+          <a href="Historial.html">
+            <i class="fa fa-history" aria-hidden="true"></i>
+            <span>Historial</span>
+          </a>
+        </li>
+        <li>
+          <a href="Contacto.html">
+            <i class="far fa-envelope"></i>
+            <span>Contacto</span>
+          </a>
+        </li>
+        <li>
+          <a href="Nosotros.html">
+            <i class="fa fa-users" aria-hidden="true"></i>
+            <span>Sobre nosotros</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section class="section-1">
+
+      <section class="banner_main container-fluid">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 ">
+              <div class="text-bg">
+                <h1>Softstar</h1>
+                <p>Bienvenido al sistema de control integral de tu taller mecánico
+                  <!--<br> en donde podrás administrar tu taller de una forma eficiente-->
+                </p>
+                <a href='#Carousel'>Ver opciones</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      
+      <div class="slide container-fluid" id="Carousel">
+        <div class="slide-inner">
+          <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden=""
+            checked="checked">
+          <div class="slide-item">
+            <img src="images/taller-cliente.jpg" class="img-fluid">
+            <label class="slide-text">Registre sus clientes con su información de contacto</label>
+          </div>
+          <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="images/registroCoche.jpg" class="img-fluid">
+            <label class="slide-text">Registre los coches de su cliente de forma rápida</label>
+          </div>
+          <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="images/ordenTrabajo.jpg" class="img-fluid">
+            <label class="slide-text">Lleve el control del coche con las órdenes de trabajo</label>
+          </div>
+          <input class="slide-open" type="radio" id="slide-4" name="slide" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="images/historialCliente.jpg" class="img-fluid">
+            <label class="slide-text">Busque los trabajos realizados al coche de forma más eficiente</label>
+          </div>
+          <label for="slide-4" class="slide-control prev control-1">‹</label>
+          <label for="slide-2" class="slide-control next control-1">›</label>
+          <label for="slide-1" class="slide-control prev control-2">‹</label>
+          <label for="slide-3" class="slide-control next control-2">›</label>
+          <label for="slide-2" class="slide-control prev control-3">‹</label>
+          <label for="slide-4" class="slide-control next control-3">›</label>
+          <label for="slide-3" class="slide-control prev control-4">‹</label>
+          <label for="slide-1" class="slide-control next control-4">›</label>
+          <ol class="slide-indicador">
+            <li>
+              <label for="slide-1" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slide-2" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slide-3" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slide-4" class="slide-circulo">•</label>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+
+      <footer class="footer-distributed container-fluid">
+
+        <div class="footer-left">
+
+          <h3><span><img src="images\SOFTSTAR.png" width="160" height="40"></span></h3>
+
+          <p class="footer-links">
+            <a href="index.html" class="link-1">Home</a>
+
+            <a href="#">Contact</a>
+
+            <a href="#">About</a>
+
+          </p>
+
+          <p class="footer-company-name">Softstar © 2022</p>
+        </div>
+
+        <div class="footer-center">
+
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>135 Av. Pie de la Cuesta</span> Querétaro, Querétaro</p>
+          </div>
+
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+52 (442) 403-06-35</p>
+          </div>
+
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:soporte@softstar.com">soporte@softstar.com</a></p>
+          </div>
+
+        </div>
+
+        <div class="footer-right">
+
+          <p class="footer-company-about">
+            <span>Acerca de nosotros</span>
+            Somos una empresa de desarrollo de software enfocado en dar soluciones en el campo automotriz, teniendo como
+            objetivo
+            la eficiencia al operar el taller mecanico automotriz de nuestros clientes.
+          </p>
+
+          <div class="footer-icons">
+
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+
+          </div>
+
+        </div>
+
+      </footer>
+    </section>
+</body>
+
+</html>

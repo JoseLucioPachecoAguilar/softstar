@@ -1,0 +1,284 @@
+/*
+Sidebar
+*/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: arial, sans-serif;
+}
+.header {
+	display: flex;
+  
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 30px;
+	background: rgb(175,0,0);
+	color: #fff;
+}
+.u-name {
+	font-size: 20px;
+	padding-left: 17px;
+}
+.u-name b {
+	color: #127b8e;
+}
+.header i {
+	font-size: 30px;
+	cursor: pointer;
+	color: #fff;
+}
+.header i:hover {
+	color: #127b8e;
+}
+.user-p {
+	text-align: center;
+	padding-left: 10px;
+	padding-top: 25px;
+}
+.user-p img {
+	width: 100px;
+	border-radius: 50%;
+}
+.user-p h4 {
+	color: #ccc;
+	padding: 5px 0;
+
+}
+.side-bar {
+	width: 250px;
+	background: #262931;
+	min-height: 100vh;
+	transition: 500ms width;
+}
+.body {
+	display: flex;
+}
+.section-1 {
+	width: 100%;
+	display:block;
+}
+.side-bar ul {
+	margin-top: 20px;
+	list-style: none;
+  padding-left: 1px;
+}
+.side-bar ul li {
+	font-size: 16px;
+	padding: 15px 0px;
+	padding-left: 15px;
+	transition: 500ms background;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.side-bar ul li:hover {
+	background: #127b8e;
+}
+.side-bar ul li a {
+	text-decoration: none;
+	color: #eee;
+	cursor: pointer;
+	letter-spacing: 1px;
+}
+.side-bar ul li a i {
+	display: inline-block;
+	padding-right: 10px;
+	font-size: 23px;
+}
+#navbtn {
+	display: inline-block;
+	margin-left: 70px;
+	font-size: 20px;
+	transition: 500ms color;
+}
+#checkbox {
+	display: none;
+}
+#checkbox:checked ~ .body .side-bar {
+	width: 60px;
+}
+#checkbox:checked ~ .body .side-bar .user-p{
+	visibility: hidden;
+}
+#checkbox:checked ~ .body .side-bar a span{
+	display: none;
+}
+/*Fin CSS Sidebar*/
+/*
+Formulario
+*/
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing:border-box;
+  }
+  
+  :focus{
+      outline: none;
+  }
+  
+  body{
+      background: #DBDBDB;
+      font-family: 'Open sans';
+  }
+  
+  /* FORMULARIO =================================== */
+  
+  .form_wrap{
+      width: 1050px;
+      height: 630px;
+      margin: 50px auto;
+      display: flex;
+  
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Informacion de Contacto*/
+  
+  .car_info::before{
+      content: '';
+      width: 100%;
+      height: 100%;
+  
+      position: absolute;
+      top: 0;
+      left: 0;
+  
+      background: #08c9c3;
+      /*background: rgb(15, 27, 161)*/
+      opacity: 0.9;
+  }
+  
+  .car_info{
+      width: 38%;
+      position: relative;
+  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+      background-image: url('../fondo.jpg');
+      background-size: cover;
+      background-position: center center;
+  
+  }
+  
+  .info_title,
+  .info_items{
+      position: relative;
+      z-index: 2;
+      color: #fff;
+  }
+  
+  .info_title{
+      margin-bottom: 60px;
+  }
+  
+  .info_title span{
+      font-size: 100px;
+      display: block;
+      text-align: center;
+      margin-bottom: 15px;
+  }
+  
+  .info_title h2{
+      font-size: 35px;
+      text-align: center;
+  }
+  
+  .info_items p{
+      display: flex;
+      align-items: center;
+  
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 10px;
+  }
+  
+  .info_items p:nth-child(1) span{
+      font-size: 30px;
+      margin-right: 10px;
+  }
+  
+  .info_items p:nth-child(2) span{
+      font-size: 50px;
+      margin-right: 15px;
+      margin-left: 4px;
+  }
+  
+  
+  /* Formulario de contacto*/
+  form.form_car{
+      width: 62%;
+      padding: 30px 40px;
+  }
+  
+  form.form_car h2{
+      font-size: 25px;
+      font-weight: 600;
+      color: #303030;
+      margin-bottom: 30px;
+  }
+  
+  form.form_car .car1_info{
+      display: flex;
+      flex-direction: column;
+  }
+  
+  form.form_car label{
+      font-weight: 600;
+  }
+  
+  form.form_car input,
+  form.form_car textarea{
+      width: 100%;
+      padding: 8px 0px 5px;
+      margin-bottom: 20px;
+  
+      border: none;
+      border-bottom: 2px solid #D1D1D1;
+  
+      font-family: 'Open sans';
+      color: #5A5A5A;
+      font-size: 14px;
+      font-weight: 400;
+  }
+  
+  form.form_car textarea{
+      max-width: 100%;
+      min-width: 100%;
+      max-height: 90px;
+  }
+  
+  form.form_car input[type="button"]{
+      width: 180px;
+      background: #4091EC;
+      padding: 10px;
+      border: none;
+      border-radius: 25px;
+  
+      align-self: flex-end;
+  
+      color: #fff;
+      font-family: 'Open sans';
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+  }
+  
+  form.form_car input[type="button"]:hover{
+      background: #3371B6;
+  }

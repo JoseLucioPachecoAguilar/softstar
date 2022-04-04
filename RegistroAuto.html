@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Registro de Auto</title>
+    <link rel="shortcut icon" href="images\car.ico">
+    <!--<img src="SOFTSTAR.png" width="157" height="40">-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css\RegistroAuto.css">
+</head>
+<body>
+
+    <input type="checkbox" id="checkbox">
+	<header class="header">
+		<h2 class="u-name">SOFTSTAR
+			<label for="checkbox">
+				<i id="navbtn" class="fa fa-bars" aria-hidden="true"></i>
+			</label>
+		</h2>
+		<i class="fa fa-user" aria-hidden="true"></i>
+	</header>
+	<div class="body">
+		<nav class="side-bar">
+			<ul>
+				<li>
+				<a href="index.html">
+					<i class="fa fa-desktop" aria-hidden="true"></i>
+					<span>Inicio</span>
+				</a>
+				</li>
+				<li>
+				<a href="RegistroCliente.html">
+                    <i class="fa fa-address-card-o" aria-hidden="true"></i>
+                    <span>Clientes</span>
+                </a>
+			    </li>
+				<li>
+				    <a href="RegistroAuto.html">
+                        <i class="fas fa-car"></i>
+                        <span>Autos</span>
+                    </a>
+				</li>
+				<li>
+				<a href="RegistroServicio.html">
+                    <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                    <span>Servicios</span>
+                </a>
+				</li>
+				<li>
+				<a href="Historial.html">
+                    <i class="fa fa-history" aria-hidden="true"></i>
+                    <span>Historial</span>
+                </a>
+				</li>
+				<li>
+				<a href="Contacto.html">
+                    <i class="far fa-envelope"></i>
+                    <span>Contacto</span>
+                </a>
+				</li>
+                <li>
+				<a href="Nosotros.html">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <span>Sobre nosotros</span>
+                </a>
+				</li>
+			</ul>
+		</nav>
+		<section class="section-1">
+			<section class="form_wrap">
+
+                <section class="car_info">
+                    <section class="info_title">
+                        <span class="fa fa-car"></span>
+                        <h2>INFORMACIÓN<br>DE VEHÍCULO</h2>
+                    </section>
+                </section>
+        
+                <form action="" class="form_car">
+                    <h2>Registro de Auto de Cliente</h2>
+                    <div class="car1_info">
+                        
+                        <label for="marca">Marca *</label>
+                        <input name="marca" id="marca" required="obligatorio" placeholder="Seleccione la Marca del vehículo">
+
+                        <label for="submarca">Submarca *</label>
+                        <input name="submarca" id="submarca" required="obligatorio" placeholder="Seleccione la Submarca del vehículo">
+
+                        <label for="nodeserie">No. De Serie *</label>
+                        <input type="text" id="noDeSerie" required="obligatorio" placeholder="Escriba el Numero de Serie del vehículo">
+
+                        <label for="kilometraje">Kilometraje *</label>
+                        <input type="text" id="kilometraje" required="obligatorio" placeholder="Escriba el Kilometraje">
+
+                        <label for="motor">Motor *</label>
+                        <input type="text" id="motor" required="obligatorio" placeholder="Escriba el tamaño del motor del vehículo">
+
+                        <label for="anio">Año *</label>
+                        <input name="text" id="anio" required="obligatorio" placeholder="Seleccione el modelo del vehículo">
+                        <input type="reset">
+                        <input type="button" value="Registrar Coche" id="btnRegCoche">
+
+                    </div>
+                </form>
+        </section>
+    
+</body>
+</html>
